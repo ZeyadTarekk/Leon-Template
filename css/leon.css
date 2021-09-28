@@ -1,5 +1,7 @@
 /* Start Variables */
-
+:root {
+  --main-color: #10cab7;
+}
 /* End Variables */
 
 /* Start Global Rules */
@@ -107,6 +109,7 @@ body {
   min-width: 200px;
   top: calc(100% + 15px);
   display: none;
+  z-index: 1;
 }
 .header .links ul::before {
   content: "";
@@ -135,3 +138,35 @@ body {
   border-bottom: 1px solid #ddd;
 }
 /* End header */
+
+/* Start Landing */
+.landing {
+  background-image: url(../images/Landing.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+.landing .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.landing .intro-text h1 {
+  margin: 0;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 50px;
+}
+.landing .intro-text p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+/* End Landing */
