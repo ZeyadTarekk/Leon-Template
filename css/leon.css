@@ -297,4 +297,10 @@ body {
     display: none;
   }
 }
+
+@media (min-width: 767px) {
+  .services .container .services-content .col:nth-child(2) .srv:first-child {
+    margin-bottom: 69px;
+  }
+}
 /* End Services */
