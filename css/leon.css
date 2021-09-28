@@ -298,9 +298,16 @@ body {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1000px) {
   .services .container .services-content .col:nth-child(2) .srv:first-child {
     margin-bottom: 69px;
   }
 }
-/* End Services */
+
+@media (min-width: 1200px) {
+  .services .container .services-content .col:nth-child(2) .srv:first-child {
+    margin-bottom: 69px;
+  }
+}
+/* End 
+Services */
