@@ -1,3 +1,7 @@
+/* Start Variables */
+
+/* End Variables */
+
 /* Start Global Rules */
 
 * {
@@ -7,18 +11,12 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
-/* End Global Rules */
-
-/* Start Variables */
-
-/* End Variables */
 
 .parent {
   background-color: #eee;
 }
 
 .container {
-  background-color: #aaa;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -45,3 +43,55 @@ body {
     width: 1170px;
   }
 }
+/* End Global Rules */
+
+/* Start header */
+.header {
+  padding: 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 60px;
+}
+
+.header .links {
+  position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+.header .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.header .links .icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.header .links .icon span:first-child {
+  width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header .links .icon span:last-child {
+  width: 100%;
+}
+/* End header */
