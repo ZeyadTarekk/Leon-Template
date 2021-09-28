@@ -170,3 +170,38 @@ body {
   line-height: 1.8;
 }
 /* End Landing */
+
+/* Start Features */
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.features .feat {
+  padding: 20px;
+  text-align: center;
+}
+.features .feat i {
+  color: var(--main-color);
+  font-size: 40px;
+}
+.features .feat h3 {
+  color: #2c4755;
+  font-weight: 800;
+  margin: 30px 0;
+  font-size: 20px;
+}
+.features .feat p {
+  line-height: 1.8;
+  color: #575757;
+  font-size: 15px;
+}
+
+/* End Features */
