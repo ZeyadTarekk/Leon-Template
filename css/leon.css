@@ -1,6 +1,7 @@
 /* Start Variables */
 :root {
   --main-color: #10cab7;
+  --secondary-color: #2c4755;
 }
 /* End Variables */
 
@@ -46,6 +47,34 @@ body {
   }
 }
 /* End Global Rules */
+
+/* Start Components */
+.special-heading {
+  color: #ebeced;
+  font-size: 162px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -5px;
+  margin: 0;
+}
+.special-heading + p {
+  font-size: 25px;
+  color: #575757;
+  margin: -55px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 70px;
+  }
+  .special-heading + p {
+    font-size: 20px;
+    margin: -35px 0 0;
+  }
+}
+
+/* End Components */
 
 /* Start header */
 .header {
@@ -205,3 +234,67 @@ body {
 }
 
 /* End Features */
+
+/* Start Services */
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.services .services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.services .services-content .srv {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .services .services-content .srv {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.services .services-content .srv i {
+  color: var(--main-color);
+  font-size: 30px;
+  flex-basis: 60px;
+}
+.services .services-content .srv .text {
+  flex: 1;
+}
+.services .services-content .srv .text h3 {
+  margin: 0 0 20px;
+}
+.services .services-content .srv .text p {
+  color: rgba(77, 76, 76, 255);
+  line-height: 1.8;
+}
+.services .services-content .image {
+  text-align: center;
+  position: relative;
+}
+.services .services-content .image::before {
+  content: "";
+  background-color: var(--secondary-color);
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 100px;
+  height: calc(100% + 100px);
+  z-index: -1;
+}
+.services .services-content .image img {
+  width: 260px;
+}
+
+@media (max-width: 1199px) {
+  .image-column {
+    display: none;
+  }
+}
+/* End Services */
