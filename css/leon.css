@@ -496,3 +496,18 @@ body {
   }
 }
 /* End Contact */
+
+/* Start Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  font-weight: 800;
+}
+.footer div {
+  padding: 40px 0;
+}
+.footer div span {
+  color: var(--main-color);
+}
+/* End Footer */
