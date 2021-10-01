@@ -1,3 +1,3 @@
 # Leon Template HTML&CSS
-## simple template using only html and css 
+## Simple template using only HTML and CSS 
 ### Design link: https://www.graphberry.com/item/leon-psd-agency-template
