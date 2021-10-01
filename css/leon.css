@@ -354,3 +354,90 @@ body {
   color: rgba(77, 76, 76, 255);
 }
 /* End Portfolio */
+
+/* Start about */
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.about .about-content {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.about .about-content .image {
+  position: relative;
+  height: 250px;
+  width: 300px;
+}
+
+@media (max-width: 991px) {
+  .about .about-content .image {
+    margin: 0 auto 60px;
+  }
+}
+
+.about .about-content .image::before {
+  content: "";
+  position: absolute;
+  background-color: #fafafa;
+  height: calc(100% + 50px);
+  width: 100px;
+  left: -18px;
+  top: -25px;
+  z-index: -1;
+}
+
+.about .about-content .image::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 275px;
+  top: -35px;
+  right: -146px;
+  z-index: -1;
+  border-left: 90px solid var(--main-color);
+  border-bottom: 90px solid var(--main-color);
+}
+
+@media (max-width: 991px) {
+  .about .about-content .image::before,
+  .about .about-content .image::after {
+    display: none;
+  }
+}
+
+.about .about-content .image img {
+  width: 100%;
+  height: 100%;
+}
+.about .about-content .text {
+  flex-basis: calc(100% - 600px);
+}
+
+.about .about-content .text p:first-of-type {
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+.about .about-content .text hr {
+  width: 50%;
+  display: inline-block;
+  border-color: var(--main-color);
+}
+.about .about-content .text p:last-of-type {
+  color: rgba(77, 76, 76, 255);
+}
+
+/* End about */
